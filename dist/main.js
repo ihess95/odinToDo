@@ -1,0 +1,1 @@
+(()=>{"use strict";const t=document.querySelector(".bodyContainer"),e=document.createElement("div"),d=new function(t,e,d,s,i){this.cardTitle="test",this.cardDesc="testing",this.cardDueDate="today",this.cardPriority="eh",this.cardNotes="testing dude"}("test","testing","today","eh","testing dude");e.textContent=d.cardTitle,e.classList.add("test"),t.appendChild(e)})();
