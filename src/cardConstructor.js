@@ -1,7 +1,7 @@
 import { todoConst } from "./todoConst";
 
 function cardConstructor(hiddenTitle, title, desc, dueDate, priority, notes) {
-  const cardClass = "card" + hiddenTitle;
+  const cardClass = "task" + hiddenTitle;
   const bodyDiv = document.querySelector(".bodyContainer");
   const cardDiv = document.createElement("div");
   const cardTitleDiv = document.createElement("div");
