@@ -36,7 +36,7 @@ body {
 }
 
 .bodyContainer div[class*="task"] {
-  background: #755a83;
+  background: rgba(127, 90, 131, 0.8);
   color: #e8e6e9;
   border-radius: 10px;
   padding: 10px;
