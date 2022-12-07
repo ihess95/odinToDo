@@ -20,6 +20,9 @@ cardConstructor(
 
 const newTaskBtn = document.createElement("button");
 const bodyContainer = document.querySelector(".bodyContainer");
+const mainGrid = document.querySelector(".mainGrid");
+const leftBar = document.createElement("div");
+leftBar.classList.add("leftBar");
 // const count = bodyContainer.getElementsByTagName("div").length;
 let count = 1;
 
@@ -37,4 +40,6 @@ newTaskBtn.addEventListener("click", function () {
   );
 });
 
-bodyContainer.appendChild(newTaskBtn);
+mainGrid.appendChild(leftBar);
+leftBar.appendChild(newTaskBtn);
+mainGrid.appendChild(bodyContainer);

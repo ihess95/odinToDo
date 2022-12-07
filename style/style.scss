@@ -5,14 +5,29 @@
 }
 
 body {
-  background-image: url("../img/bg.jpg");
+  background-image: url("../img/bg2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  backdrop-filter: blur(2px);
+  height: 100vh;
+}
+
+.mainGrid {
+  display: flex;
+  justify-content: space-between;
+  background-image: none;
+}
+
+.leftBar {
+  background: #e8e6e9;
+  width: auto;
+  height: 100vh;
 }
 
 .bodyContainer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  height: 2vh;
   gap: 10px;
 }
 .bodyContainer div[class*="task"] {
