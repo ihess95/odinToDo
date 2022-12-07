@@ -27,6 +27,13 @@ function cardConstructor(hiddenTitle, title, desc, dueDate, priority, notes) {
   cardDiv.appendChild(cardPriorityDiv);
   cardDiv.appendChild(cardNotesDiv);
   bodyDiv.appendChild(cardDiv);
+  cardDiv.addEventListener("click", function () {
+    if (cardDiv.classList.contains("active")) {
+      cardDiv.classList.remove("active");
+    } else {
+      cardDiv.classList.add("active");
+    }
+  });
 }
 
 export { cardConstructor };

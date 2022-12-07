@@ -1,7 +1,7 @@
 import { cardConstructor } from "./cardConstructor";
 
 cardConstructor(
-  "taskApp",
+  "App",
   "Finish this task app",
   "Gotta work on it dude",
   "soon",
@@ -10,7 +10,7 @@ cardConstructor(
 );
 
 cardConstructor(
-  "taskAppTest",
+  "AppTest",
   "Finish this task appTwo",
   "Gotta work on it dude",
   "soon",

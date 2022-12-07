@@ -9,7 +9,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   -webkit-backdrop-filter: blur(2px);
-          backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
   height: 100vh;
 }
 
@@ -35,10 +35,27 @@ body {
   gap: 10px;
 }
 
-.bodyContainer div[class*=task] {
+.bodyContainer div[class*="task"] {
   background: #755a83;
   color: #e8e6e9;
   border-radius: 10px;
   padding: 10px;
   box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2);
-}/*# sourceMappingURL=style.css.map */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bodyContainer div[class*="task"] .title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.bodyContainer div[class*="task"] * {
+  padding: 10px;
+}
+
+*.active {
+  background: #e8e6e9 !important;
+  color: #755a83 !important;
+} /*# sourceMappingURL=style.css.map */
