@@ -1,13 +1,14 @@
 import { todoConst } from "./todoConst";
 
-function cardConstructor(title, desc, dueDate, priority, notes) {
+function cardConstructor(hiddenTitle, title, desc, dueDate, priority, notes) {
+  const cardClass = "card" + hiddenTitle;
   const bodyDiv = document.querySelector(".bodyContainer");
   const cardDiv = document.createElement("div");
   const cardTitleDiv = document.createElement("div");
   const cardDescDiv = document.createElement("div");
-  const cardOne = new todoConst(title, desc, dueDate, priority, notes);
-  cardTitleDiv.textContent = cardOne.cardTitle;
-  cardDiv.classList.add("test");
+  const cardInst = new todoConst(title, desc, dueDate, priority, notes);
+  cardTitleDiv.textContent = cardInst.cardTitle;
+  cardDiv.classList.add(cardClass);
   bodyDiv.appendChild(cardDiv);
   cardDiv.appendChild(cardTitleDiv);
   cardDiv.appendChild(cardDescDiv);
