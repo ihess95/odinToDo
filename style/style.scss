@@ -19,8 +19,11 @@ body {
 }
 
 .leftBar {
+  display: flex;
+  flex-direction: column;
   background: #e8e6e9;
-  width: auto;
+  min-width: 24vw;
+  max-width: 24vw;
   height: 100vh;
 }
 
@@ -31,7 +34,9 @@ body {
   gap: 10px;
 }
 .bodyContainer div[class*="task"] {
-  background: red;
+  background: #755a83;
+  color: #e8e6e9;
   border-radius: 10px;
   padding: 10px;
+  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
