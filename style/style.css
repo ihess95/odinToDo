@@ -23,8 +23,7 @@ body {
   padding-right: 10px;
   flex-direction: column;
   background: #e8e6e9;
-  min-width: 24vw;
-  max-width: 24vw;
+  width: 200px;
   height: 100vh;
   z-index: 11;
 }
