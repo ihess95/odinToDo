@@ -44,7 +44,24 @@ body {
     font-weight: 600;
   }
 }
+.bodyContainer.dimmed {
+  opacity: 0.5;
+}
 *.active {
   background: #e8e6e9 !important;
   color: #755a83 !important;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  z-index: 31;
+}
+.hidden {
+  display: none;
+}
+.coverPanel {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  z-index: 30;
 }
