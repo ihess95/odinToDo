@@ -31,10 +31,10 @@ function cardConstructor(hiddenTitle, title, desc, dueDate, priority, notes) {
   cardDiv.addEventListener("click", function () {
     if (cardDiv.classList.contains("active")) {
       cardDiv.classList.remove("active");
-      coverPanel.classList.remove("hidden");
+      coverPanel.classList.add("hidden");
     } else {
       cardDiv.classList.add("active");
-      coverPanel.classList.add("hidden");
+      coverPanel.classList.remove("hidden");
     }
   });
 }
