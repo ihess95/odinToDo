@@ -56,12 +56,13 @@ body {
 
 .bodyContainer {
   padding-top: 15px;
-  justify-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  height: 2vh;
+  height: 100%;
+  width: 100%;
   gap: 10px;
 }
+
 .bodyContainer div[class*="task"] {
   background: #755a83;
   color: #e8e6e9;
@@ -96,6 +97,8 @@ body {
 }
 
 .prompt {
+  display: flex;
+  flex-direction: column;
   background: #755a83;
   color: #e8e6e9;
   border-radius: 10px;
@@ -107,6 +110,85 @@ body {
   width: 60%;
   height: 50%;
   z-index: 11;
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+  }
+  textarea {
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 1rem;
+    resize: none;
+  }
+  .titleField {
+    height: 10vh;
+  }
+  .descField {
+    height: 60vh;
+  }
+  .dateField {
+    height: 10vh;
+  }
+  .priorityBtnCont {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    button {
+      width: 100px;
+      height: 30px;
+      border-radius: 5px;
+      border: none;
+      font-size: 0.8rem;
+      background: #e8e6e9;
+      color: #755a83;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    button {
+      width: 100px;
+      height: 30px;
+      border-radius: 5px;
+      border: none;
+      font-size: 0.8rem;
+      background: #e8e6e9;
+      color: #755a83;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+  .confOrDeny {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    button {
+      width: 100px;
+      height: 30px;
+      border-radius: 5px;
+      border: none;
+      font-size: 0.8rem;
+      background: #e8e6e9;
+      color: #755a83;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    button {
+      width: 100px;
+      height: 30px;
+      border-radius: 5px;
+      border: none;
+      font-size: 0.8rem;
+      background: #e8e6e9;
+      color: #755a83;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
 }
 .title {
   font-size: 1.5rem;
