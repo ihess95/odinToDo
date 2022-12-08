@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url("../img/bg2.jpg");
+  background-image: url("../img/bg2tall.jpg");
   background-size: 100vh;
   background-repeat: repeat-x;
   -webkit-backdrop-filter: blur(2px);
@@ -19,6 +19,7 @@ body {
 }
 
 .leftBar {
+  justify-self: flex-start;
   display: flex;
   padding-right: 10px;
   flex-direction: column;
@@ -29,6 +30,7 @@ body {
 }
 
 .bodyContainer {
+  justify-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   height: 2vh;
