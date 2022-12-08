@@ -6,8 +6,8 @@
 
 body {
   background-image: url("../img/bg2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: 100vh;
+  background-repeat: repeat-x;
   backdrop-filter: blur(2px);
   height: 100vh;
 }
