@@ -26,6 +26,7 @@ body {
   min-width: 24vw;
   max-width: 24vw;
   height: 100vh;
+  z-index: 11;
 }
 
 .bodyContainer {
@@ -57,7 +58,7 @@ body {
   position: absolute;
   top: 10%;
   left: 50%;
-  z-index: 31;
+  z-index: 11;
 }
 
 .hidden {
@@ -69,5 +70,5 @@ body {
   height: 100vh;
   position: fixed;
   width: 100%;
-  z-index: 30;
+  z-index: 10;
 }/*# sourceMappingURL=style.css.map */
