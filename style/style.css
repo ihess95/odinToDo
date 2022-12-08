@@ -58,4 +58,7 @@ body {
 *.active {
   background: #e8e6e9 !important;
   color: #755a83 !important;
+  position: absolute;
+  left: 50%;
+  top: 10%;
 } /*# sourceMappingURL=style.css.map */
