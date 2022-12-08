@@ -1,4 +1,5 @@
 import { cardConstructor } from "./cardConstructor";
+import { createPrompt } from "./newTaskPrompt";
 
 cardConstructor(
   "1",
@@ -29,6 +30,7 @@ let count = 2;
 newTaskBtn.textContent = "Add New Task";
 newTaskBtn.addEventListener("click", function () {
   count++;
+  createPrompt();
   cardConstructor(
     // "card" + count,
     count,

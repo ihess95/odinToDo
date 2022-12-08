@@ -27,7 +27,6 @@ body {
   font-size: 1.5rem;
   font-style: italic;
   font-weight: 600;
-  margin-bottom: 10px;
 }
 .header img {
   width: 40px;
@@ -36,12 +35,14 @@ body {
 }
 
 .mainGrid {
-  padding-top: 70px;
+  padding-top: 50px;
+  padding-right: 10px;
   display: flex;
   justify-content: space-between;
 }
 
 .leftBar {
+  padding-top: 15px;
   justify-self: flex-start;
   display: flex;
   padding-right: 10px;
@@ -54,6 +55,7 @@ body {
 }
 
 .bodyContainer {
+  padding-top: 15px;
   justify-items: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -96,4 +98,52 @@ body {
   position: fixed;
   width: 100%;
   z-index: 10;
+}
+
+.prompt {
+  background: #755a83;
+  color: #e8e6e9;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  width: 60%;
+  height: 50%;
+  z-index: 11;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.input {
+  margin-top: 10px;
+}
+.input input {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  font-size: 1rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.buttons button {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+  background: #e8e6e9;
+  color: #755a83;
+  font-weight: 600;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
