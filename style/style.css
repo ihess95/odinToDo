@@ -128,7 +128,7 @@ body {
   border: none;
   padding: 10px;
   margin: 10px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   resize: none;
 }
 .prompt .titleField {
@@ -169,7 +169,7 @@ body {
 }
 .prompt .confOrDeny {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 10px;
 }
 .prompt .confOrDeny button {
