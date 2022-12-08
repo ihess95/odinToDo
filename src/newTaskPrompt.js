@@ -1,5 +1,6 @@
 import { showPanel } from "./hideCoverPanel";
 import { hidePanel } from "./hideCoverPanel";
+import { xBtn } from "./xBtn";
 
 function createPrompt() {
   const newPrompt = document.createElement("div");

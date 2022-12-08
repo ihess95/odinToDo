@@ -64,6 +64,8 @@ body {
 }
 
 .bodyContainer div[class*=task] {
+  display: flex;
+  flex-direction: column;
   background: #755a83;
   color: #e8e6e9;
   border-radius: 10px;
@@ -73,6 +75,11 @@ body {
 .bodyContainer div[class*=task] .title {
   font-size: 1.5rem;
   font-weight: 600;
+}
+.bodyContainer div[class*=task] img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
 }
 
 .bodyContainer.dimmed {
