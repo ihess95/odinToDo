@@ -32,7 +32,11 @@ newTaskBtn.textContent = "Add New Task";
 newTaskBtn.classList.add("newTaskBtn");
 newTaskBtn.addEventListener("click", function () {
   count++;
-  preventMultiPrompt();
+  if (newTaskBtn.classList.contains("clicked")) {
+    console.log("test");
+  } else {
+    createPrompt();
+  }
   cardConstructor(
     // "card" + count,
     count,
@@ -42,6 +46,7 @@ newTaskBtn.addEventListener("click", function () {
     "pretty high",
     "working on it"
   );
+  newTaskBtn.classList.add("clicked");
 });
 
 mainGrid.appendChild(leftBar);
