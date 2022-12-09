@@ -1,5 +1,6 @@
 import { cardConstructor } from "./cardConstructor";
 import { createPrompt } from "./newTaskPrompt";
+import { preventMultiPrompt } from "./preventMultiPrompt";
 
 cardConstructor(
   "1",
@@ -28,9 +29,10 @@ leftBar.classList.add("leftBar");
 let count = 2;
 
 newTaskBtn.textContent = "Add New Task";
+newTaskBtn.classList.add("newTaskBtn");
 newTaskBtn.addEventListener("click", function () {
   count++;
-  createPrompt();
+  preventMultiPrompt();
   cardConstructor(
     // "card" + count,
     count,
