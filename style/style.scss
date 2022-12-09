@@ -75,6 +75,9 @@ body {
     font-size: 1.5rem;
     font-weight: 600;
   }
+  :first-child {
+    align-self: flex-end;
+  }
   img {
     width: 25px;
     height: 25px;

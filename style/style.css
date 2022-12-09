@@ -76,6 +76,9 @@ body {
   font-size: 1.5rem;
   font-weight: 600;
 }
+.bodyContainer div[class*=task] :first-child {
+  align-self: flex-end;
+}
 .bodyContainer div[class*=task] img {
   width: 25px;
   height: 25px;
