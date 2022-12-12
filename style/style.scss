@@ -45,7 +45,6 @@ body {
   padding-top: 15px;
   justify-self: flex-start;
   display: flex;
-  padding-right: 10px;
   padding-left: 10px;
   flex-direction: column;
   background: #e8e6e9;
@@ -56,6 +55,7 @@ body {
 
 .bodyContainer {
   padding-top: 15px;
+  padding-left: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   height: 100%;

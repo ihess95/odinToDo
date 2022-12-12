@@ -47,6 +47,9 @@ newTaskBtn.addEventListener("click", function () {
     "working on it"
   );
   newTaskBtn.classList.add("clicked");
+  setTimeout(function ha() {
+    newTaskBtn.classList.remove("clicked");
+  }, 1000);
 });
 
 mainGrid.appendChild(leftBar);
