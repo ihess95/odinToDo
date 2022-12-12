@@ -51,6 +51,13 @@ body {
   width: 200px;
   height: 9vh;
   z-index: 11;
+  button {
+    margin-right: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #a9a2ad;
+    color: #e8e6e9;
+  }
 }
 
 .bodyContainer {

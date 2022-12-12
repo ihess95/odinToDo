@@ -52,6 +52,13 @@ body {
   height: 9vh;
   z-index: 11;
 }
+.leftBar button {
+  margin-right: 10px;
+  border: none;
+  border-radius: 10px;
+  background-color: #a9a2ad;
+  color: #e8e6e9;
+}
 
 .bodyContainer {
   padding-top: 15px;
