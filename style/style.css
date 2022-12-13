@@ -139,7 +139,13 @@ body {
   top: 10%;
   left: 25%;
   width: 60%;
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   height: 50%;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
   z-index: 13;
 }
 .prompt img {
@@ -173,18 +179,8 @@ body {
   margin-top: 10px;
 }
 .prompt .priorityBtnCont button {
-  width: 100px;
-  height: 30px;
-  border-radius: 5px;
-  border: none;
-  font-size: 0.8rem;
-  background: #e8e6e9;
-  color: #755a83;
-  font-weight: 600;
-  cursor: pointer;
-}
-.prompt .priorityBtnCont button {
-  width: 100px;
+  margin: 3px;
+  width: 90px;
   height: 30px;
   border-radius: 5px;
   border: none;

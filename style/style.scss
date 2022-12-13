@@ -136,7 +136,9 @@ body {
   top: 10%;
   left: 25%;
   width: 60%;
+  max-width: fit-content;
   height: 50%;
+  max-height: fit-content;
   z-index: 13;
   img {
     position: absolute;
@@ -168,18 +170,8 @@ body {
     justify-content: space-between;
     margin-top: 10px;
     button {
-      width: 100px;
-      height: 30px;
-      border-radius: 5px;
-      border: none;
-      font-size: 0.8rem;
-      background: #e8e6e9;
-      color: #755a83;
-      font-weight: 600;
-      cursor: pointer;
-    }
-    button {
-      width: 100px;
+      margin: 3px;
+      width: 90px;
       height: 30px;
       border-radius: 5px;
       border: none;
