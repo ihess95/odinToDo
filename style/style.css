@@ -80,7 +80,6 @@ body {
   background: #755a83;
   color: #e8e6e9;
   border-radius: 10px;
-  padding: 10px;
   box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 .bodyContainer div[class*=task] .title {
@@ -95,6 +94,13 @@ body {
   height: 25px;
   cursor: pointer;
 }
+.bodyContainer div[class*=task] img .bodyContainer.dimmed {
+  display: none;
+}
+.bodyContainer div[class*=task] .infoDiv {
+  padding: 1px 10px 10px 10px;
+  margin: 0px;
+}
 
 .bodyContainer.dimmed {
   opacity: 0.5;
@@ -106,7 +112,7 @@ body {
   position: absolute;
   top: 10%;
   left: 50%;
-  z-index: 11;
+  z-index: 13;
 }
 
 .hidden {
@@ -118,7 +124,7 @@ body {
   height: 100vh;
   position: fixed;
   width: 100%;
-  z-index: 10;
+  z-index: 12;
 }
 
 .prompt {
@@ -134,7 +140,7 @@ body {
   left: 25%;
   width: 60%;
   height: 50%;
-  z-index: 11;
+  z-index: 13;
 }
 .prompt img {
   position: absolute;

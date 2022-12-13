@@ -20,25 +20,25 @@ function cardConstructor(hiddenTitle, title, desc, dueDate, priority, notes) {
   xImg.classList.add("xImg");
   xImg.src = "../img/x.svg";
   cardDiv.appendChild(xImg);
-  xImg.addEventListener("click", function () {
-    hidePanel();
-    cardDiv.remove();
-  });
   const cardInst = new todoConst(title, desc, dueDate, priority, notes);
+  const infoDiv = document.createElement("div");
+  infoDiv.classList.add("infoDiv");
+  infoDiv.appendChild;
   cardTitleDiv.textContent = cardInst.cardTitle;
   cardDescDiv.textContent = cardInst.cardDesc;
   cardDueDateDiv.textContent = cardInst.cardDueDate;
   cardPriorityDiv.textContent = cardInst.cardPriority;
   cardNotesDiv.textContent = cardInst.cardDesc;
   cardDiv.classList.add(cardClass);
-  cardDiv.appendChild(cardTitleDiv);
-  cardDiv.appendChild(cardDescDiv);
-  cardDiv.appendChild(cardDueDateDiv);
-  cardDiv.appendChild(cardPriorityDiv);
-  cardDiv.appendChild(cardNotesDiv);
+  cardDiv.appendChild(infoDiv);
+  infoDiv.appendChild(cardTitleDiv);
+  infoDiv.appendChild(cardDescDiv);
+  infoDiv.appendChild(cardDueDateDiv);
+  infoDiv.appendChild(cardPriorityDiv);
+  infoDiv.appendChild(cardNotesDiv);
   bodyDiv.appendChild(cardDiv);
 
-  cardDiv.addEventListener("click", function () {
+  infoDiv.addEventListener("click", function () {
     if (cardDiv.classList.contains("active")) {
       cardDiv.classList.remove("active");
       hidePanel();
@@ -46,6 +46,14 @@ function cardConstructor(hiddenTitle, title, desc, dueDate, priority, notes) {
       cardDiv.classList.add("active");
       showPanel();
     }
+  });
+
+  xImg.addEventListener("mouseover", function () {
+    console.log("text");
+  });
+  xImg.addEventListener("click", function () {
+    hidePanel();
+    cardDiv.remove();
   });
 }
 
