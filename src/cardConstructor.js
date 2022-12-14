@@ -1,6 +1,7 @@
 import { todoConst } from "./todoConst";
 import { showPanel } from "./hideCoverPanel";
 import { hidePanel } from "./hideCoverPanel";
+import { createPrompt } from "./newTaskPrompt";
 
 function cardConstructor(hiddenTitle, title, desc, dueDate, priority, notes) {
   const cardClass = "task" + hiddenTitle;

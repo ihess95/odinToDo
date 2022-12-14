@@ -1,8 +1,10 @@
 import { showPanel } from "./hideCoverPanel";
 import { hidePanel } from "./hideCoverPanel";
+import { cardConstructor } from "./cardConstructor";
 import { xBtn } from "./xBtn";
 
 function createPrompt() {
+  let count = 0;
   function NewCardInput(title, desc, date, priority) {
     (this.title = title),
       (this.desc = desc),
@@ -25,23 +27,30 @@ function createPrompt() {
 
   const priorityBtnCont = document.createElement("div");
 
-  let priorityField = "";
+  let priorityField = "Low Priority";
 
   function priority(input) {
-    priorityField = btn.textContent;
+    priorityField = input.textContent;
+    return priorityField;
   }
   const lowBtn = document.createElement("button");
   lowBtn.textContent = "Low Priority";
   lowBtn.classList.add("lowBtn");
-  lowBtn.addEventListener("click", priority(lowBtn));
+  lowBtn.addEventListener("click", function () {
+    priority(lowBtn);
+  });
   const midBtn = document.createElement("button");
   midBtn.textContent = "Medium Priority";
   midBtn.classList.add("midBtn");
-  midBtn.addEventListener("click", priority(midBtn));
+  midBtn.addEventListener("click", function () {
+    priority(midBtn);
+  });
   const hiBtn = document.createElement("button");
   hiBtn.textContent = "High Priority";
   hiBtn.classList.add("hiBtn");
-  hiBtn.addEventListener("click", priority(hiBtn));
+  hiBtn.addEventListener("click", function () {
+    priority(hiBtn);
+  });
 
   priorityBtnCont.classList.add("priorityBtnCont");
 
@@ -52,11 +61,19 @@ function createPrompt() {
   confirmBtn.classList.add("confirmBtn");
   confirmBtn.addEventListener("click", function () {
     // const newTitle = titleField.value
-    const newCard = new NewCardInput(
+    // const newCard = new NewCardInput(
+    //   titleField.value,
+    //   descField.value,
+    //   dateField.value,
+    //   priorityField
+    // );
+    const newcard = new cardConstructor(
+      count,
       titleField.value,
       descField.value,
       dateField.value,
-      priorityField
+      priorityField,
+      ""
     );
     console.log(newCard);
   });
