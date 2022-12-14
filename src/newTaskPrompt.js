@@ -60,7 +60,9 @@ function createPrompt() {
   confirmBtn.textContent = "Create Task";
   confirmBtn.classList.add("confirmBtn");
   confirmBtn.addEventListener("click", function () {
-    const newcard = new cardConstructor(
+    newPrompt.remove();
+    hidePanel();
+    const newCard = new cardConstructor(
       count,
       titleField.value,
       descField.value,
