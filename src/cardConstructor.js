@@ -49,9 +49,6 @@ function cardConstructor(hiddenTitle, title, desc, dueDate, priority, notes) {
     }
   });
 
-  xImg.addEventListener("mouseover", function () {
-    console.log("text");
-  });
   xImg.addEventListener("click", function () {
     hidePanel();
     cardDiv.remove();
