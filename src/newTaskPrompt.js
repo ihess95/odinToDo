@@ -3,6 +3,12 @@ import { hidePanel } from "./hideCoverPanel";
 import { xBtn } from "./xBtn";
 
 function createPrompt() {
+  function NewCardInput(title, desc, date, priority) {
+    (this.title = title),
+      (this.desc = desc),
+      (this.date = date),
+      (this.priority = priority);
+  }
   const newPrompt = document.createElement("div");
   const bodyContainer = document.querySelector(".bodyContainer");
   const titleField = document.createElement("textarea");
@@ -39,6 +45,10 @@ function createPrompt() {
   const denyBtn = document.createElement("button");
   denyBtn.textContent = "Cancel";
   denyBtn.classList.add("denyBtn");
+  denyBtn.addEventListener("click", function () {
+    newPrompt.remove();
+    hidePanel();
+  });
 
   showPanel();
   newPrompt.classList.add("prompt");
