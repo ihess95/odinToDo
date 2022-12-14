@@ -60,13 +60,6 @@ function createPrompt() {
   confirmBtn.textContent = "Create Task";
   confirmBtn.classList.add("confirmBtn");
   confirmBtn.addEventListener("click", function () {
-    // const newTitle = titleField.value
-    // const newCard = new NewCardInput(
-    //   titleField.value,
-    //   descField.value,
-    //   dateField.value,
-    //   priorityField
-    // );
     const newcard = new cardConstructor(
       count,
       titleField.value,
@@ -75,7 +68,6 @@ function createPrompt() {
       priorityField,
       ""
     );
-    console.log(newCard);
   });
   const denyBtn = document.createElement("button");
   denyBtn.textContent = "Cancel";

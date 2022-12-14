@@ -37,15 +37,6 @@ newTaskBtn.addEventListener("click", function () {
   } else {
     createPrompt();
   }
-  // cardConstructor(
-  //   // "card" + count,
-  //   count,
-  //   "Finish this task appTwo",
-  //   "Gotta work on it dude",
-  //   "soon",
-  //   "pretty high",
-  //   "working on it"
-  // );
   newTaskBtn.classList.add("clicked");
   setTimeout(function ha() {
     newTaskBtn.classList.remove("clicked");
