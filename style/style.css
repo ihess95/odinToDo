@@ -54,6 +54,7 @@ body {
 }
 .leftBar button {
   margin-right: 10px;
+  margin-top: 10px;
   border: none;
   border-radius: 10px;
   background-color: #a9a2ad;
@@ -189,6 +190,9 @@ body {
   color: #755a83;
   font-weight: 600;
   cursor: pointer;
+}
+.prompt .priorityBtnCont div[class*=Btn] .aBtn {
+  background-color: #a9a2ad;
 }
 .prompt .confOrDeny {
   display: flex;

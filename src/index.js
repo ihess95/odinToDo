@@ -43,6 +43,10 @@ newTaskBtn.addEventListener("click", function () {
   }, 1000);
 });
 
+const switchFolderBtn = document.createElement("button");
+switchFolderBtn.textContent = "Future Tasks";
+
 mainGrid.appendChild(leftBar);
 leftBar.appendChild(newTaskBtn);
+leftBar.appendChild(switchFolderBtn);
 mainGrid.appendChild(bodyContainer);

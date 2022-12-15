@@ -38,18 +38,27 @@ function createPrompt() {
   lowBtn.classList.add("lowBtn");
   lowBtn.addEventListener("click", function () {
     priority(lowBtn);
+    lowBtn.classList.add("aBtn");
+    hiBtn.classList.remove("aBtn");
+    midBtn.classList.remove("aBtn");
   });
   const midBtn = document.createElement("button");
   midBtn.textContent = "Medium Priority";
   midBtn.classList.add("midBtn");
   midBtn.addEventListener("click", function () {
     priority(midBtn);
+    lowBtn.classList.remove("aBtn");
+    hiBtn.classList.remove("aBtn");
+    midBtn.classList.add("aBtn");
   });
   const hiBtn = document.createElement("button");
   hiBtn.textContent = "High Priority";
   hiBtn.classList.add("hiBtn");
   hiBtn.addEventListener("click", function () {
     priority(hiBtn);
+    hiBtn.classList.add("aBtn");
+    lowBtn.classList.remove("aBtn");
+    midBtn.classList.remove("aBtn");
   });
 
   priorityBtnCont.classList.add("priorityBtnCont");
