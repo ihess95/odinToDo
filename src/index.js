@@ -45,8 +45,11 @@ newTaskBtn.addEventListener("click", function () {
 
 const switchFolderBtn = document.createElement("button");
 switchFolderBtn.textContent = "Future Tasks";
+const switchProjectBtn = document.createElement("button");
+switchProjectBtn.textContent = "Other Projects";
 
 mainGrid.appendChild(leftBar);
 leftBar.appendChild(newTaskBtn);
 leftBar.appendChild(switchFolderBtn);
+leftBar.appendChild(switchProjectBtn);
 mainGrid.appendChild(bodyContainer);
