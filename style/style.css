@@ -49,7 +49,7 @@ body {
   flex-direction: column;
   background: #e8e6e9;
   width: 200px;
-  height: 9vh;
+  height: 50vh;
   z-index: 11;
 }
 .leftBar button {
