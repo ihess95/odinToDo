@@ -1,0 +1,3 @@
+function preventMultiPrompt() {}
+
+export { preventMultiPrompt };
